@@ -1,0 +1,107 @@
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size:  1.6rem;
+    background: linear-gradient( 287deg, #190361 0%,  #BB00FF 100%);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 1.7rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+main{
+    background-color: #fff;    
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem;
+    color: #34355B;
+    box-shadow: 0 2px 9px 9px rgba(0, 0, 0, 0.2);
+    width: min(42.8rem, 80%);
+    height: min(42.8rem, 80%);
+    text-align: center;
+}
+
+/* screen 1 */
+
+.screen1 p, #btnBack{
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+#btnLuck{
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
+.screen2 p{
+    background-color: #E4EDF1;
+    width: 30rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #000;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
+}
+
+.screen2 img{
+    margin-top: 1.7rem;
+}
+
+#btnBack{
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color: #FF9500;
+    border-radius: .4rem;
+    border: none;
+    color: #fff;
+    margin-top: 1.7rem;
+    margin-bottom: 4.8rem;
+    transition: .2s;
+}
+#btnBack:hover{
+    background-color: #cc8118;
+    cursor: pointer;
+}
+
+/* animation */
+
+#btnLuck{
+    animation: pulse 1.2s forwards alternate infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(.99);
+    }
+}
+
+.screen2 img{
+    animation: open 5s forwards 1;
+}
+
+@keyframes open {
+    0%{
+        opacity: 0;
+    }
+}
